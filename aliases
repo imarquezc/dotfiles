@@ -28,9 +28,6 @@ alias s="rspec"
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"
 
-# Other aliases
-eval $(hub alias -s)
-
 # Global Docker Compose
 alias services="docker-compose -p global -f ~/.docker-compose.global.yml ps"
 alias services-up="docker-compose -p global -f ~/.docker-compose.global.yml up -d"
