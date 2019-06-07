@@ -1,0 +1,7 @@
+#!/bin/bash
+brew bundle --file=- <<EOF
+tap 'thoughtbot/formulae'
+brew 'rcm'
+EOF
+
+RCRC=$(pwd)/rcrc rcup
