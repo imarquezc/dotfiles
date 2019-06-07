@@ -31,6 +31,7 @@
   dewip = reset HEAD~1
   squash = !sh -c 'REV=$(git rev-parse $1) && git commit --squash $@ && git rebase -i --autosquash $REV^' -
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %an' --abbrev-commit --date=relative
+  lo = log --oneline
 
 [core]
   excludesfile = ~/.gitignore
