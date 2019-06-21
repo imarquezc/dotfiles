@@ -77,8 +77,18 @@ eval "$(nodenv init -)"
 export PATH=".git/safe/../../bin:$PATH"
 export PATH=".git/safe/../../node_modules/.bin:$PATH"
 
-# android sdk
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+# Create a JAVA_HOME variable, determined dynamically
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home
+# Add that to the global PATH variable
+export PATH=${JAVA_HOME}/bin:$PATH
+# Set Android_HOME
+export ANDROID_HOME=~/Library/Android/sdk/
+# Add the Android SDK to the ANDROID_HOME variable
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+#Set GRADLE_HOME
+export GRADLE_HOME=/Applications/Android\ Studio.app/Contents/gradle/gradle-5.1.1
+export PATH=$PATH:$GRADLE_HOME/bin
 
 # functions
 if [ -d ~/.bash_functions ]; then
@@ -90,3 +100,5 @@ fi
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
+eval $(thefuck --alias)
