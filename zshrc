@@ -73,6 +73,8 @@ setopt hist_ignore_all_dups
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
+export PATH="$HOME/.nodenv/bin:$PATH"
+
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 export PATH=".git/safe/../../node_modules/.bin:$PATH"
@@ -89,6 +91,8 @@ export PATH=$ANDROID_HOME/tools:$PATH
 #Set GRADLE_HOME
 export GRADLE_HOME=/Applications/Android\ Studio.app/Contents/gradle/gradle-5.1.1
 export PATH=$PATH:$GRADLE_HOME/bin
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # functions
 if [ -d ~/.bash_functions ]; then
