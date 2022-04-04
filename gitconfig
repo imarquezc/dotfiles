@@ -1,6 +1,6 @@
 [user]
   name = Juan Ignacio Márquez
-  email = ignaciomarquezc@gmail.com
+	email = ignaciomarquezc@gmail.com
 
 [credential]
   helper = osxkeychain

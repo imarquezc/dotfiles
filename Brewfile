@@ -51,13 +51,6 @@ brew 'postgresql', start_service: false
 brew 'mysql', start_service: false
 brew 'redis', start_service: false
 
-
-cask 'alfred'
-cask 'daisydisk'
-cask 'firefox-developer-edition'
-cask 'google-chrome'
-cask 'google-backup-and-sync'
-cask 'harvest'
 cask 'iterm2'
 cask 'telegram'
 cask 'visual-studio-code'

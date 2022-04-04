@@ -1,5 +1,5 @@
 # enable antigen
-source /usr/local/share/antigen/antigen.zsh
+source ~/antigen.zsh
 
 # Load FPATH functions
 FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -13,9 +13,8 @@ antigen bundles <<EOBUNDLES
   gem
   heroku
   kubectl
-  osx
+  macos
   fasd
-  thefuck
   key-bindings
 
   djui/alias-tips
@@ -104,5 +103,3 @@ fi
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
-
-eval $(thefuck --alias)
