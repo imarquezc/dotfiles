@@ -12,7 +12,6 @@ antigen bundles <<EOBUNDLES
   git
   gem
   heroku
-  kubectl
   macos
   fasd
   key-bindings
