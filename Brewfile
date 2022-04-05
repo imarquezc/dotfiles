@@ -51,7 +51,10 @@ brew 'postgresql', start_service: false
 brew 'mysql', start_service: false
 brew 'redis', start_service: false
 
+cask 'docker'
 cask 'iterm2'
+cask 'postman'
+cask 'slack'
 cask 'telegram'
 cask 'visual-studio-code'
 cask 'vlc'

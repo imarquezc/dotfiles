@@ -1,5 +1,5 @@
 # enable antigen
-source ~/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 # Load FPATH functions
 FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
