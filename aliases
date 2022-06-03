@@ -27,6 +27,8 @@ alias t="ruby -I test"
 # Rails
 alias m="migrate"
 alias s="rspec"
+alias rs="spring stop && rails s"
+alias rc="spring stop && rails c"
 
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"
