@@ -18,7 +18,7 @@ antigen bundles <<EOBUNDLES
 
   djui/alias-tips
 
-  mafredri/zsh-async
+  mafredri/zsh-async@main
   zsh-users/zsh-completions
   zsh-users/zsh-autosuggestions
   sindresorhus/pure@v1.5.2
