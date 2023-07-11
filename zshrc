@@ -71,6 +71,11 @@ setopt hist_ignore_all_dups
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
+# Init pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 export PATH="$HOME/.nodenv/bin:$PATH"
 
 # mkdir .git/safe in the root of repositories you trust
