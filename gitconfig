@@ -49,6 +49,9 @@
 [merge]
   ff = only
 
+[checkout]
+  defaultRemote = origin
+
 [commit]
   template = ~/.gitmessage
 
