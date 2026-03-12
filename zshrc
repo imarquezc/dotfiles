@@ -42,6 +42,8 @@ bindkey '^[f' forward-word
 bindkey '^[b' backward-word
 bindkey '^[h' backward-delete-word
 bindkey '^[d' backward-kill-line
+bindkey "\e[1;3D" backward-word  # Option+Left
+bindkey "\e[1;3C" forward-word   # Option+Right
 
 # makes color constants available
 autoload -U colors
